@@ -11,8 +11,7 @@ _02 (s1:str1) (s2:str2)
     | str1 == ""    = s1:[s2]
     | otherwise     = s1:s2:_02 str1 str2
 
-_03 str =
-    words str
+_03 str = map length $ words str
 
 _04 str = 
     words str
